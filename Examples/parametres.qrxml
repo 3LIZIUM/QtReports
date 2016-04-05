@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<report xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="report" pageWidth="595" pageHeight="842" orientation="Landscape">
+	<parameter name="MyDate" class="java.util.Date"/>
+	<title>
+		<band height="79">
+		</band>
+    </title>
+</report>

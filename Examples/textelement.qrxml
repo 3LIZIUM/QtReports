@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<report xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="report" pageWidth="595" pageHeight="842" orientation="Landscape">
+	<title>
+		<band height="79">
+			<staticText>
+				<reportElement x="0" y="40" width="500" height="20"/>
+				<textElement verticalAlignment="Top" textAlignment="Right"/>
+				<text>
+					<![CDATA[Это пример форматирования с помощью 	textElement]]>
+				</text>
+			</staticText>
+		</band>
+	</title>
+</report>

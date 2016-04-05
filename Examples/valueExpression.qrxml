@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<report xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="report" pageWidth="595" pageHeight="842" orientation="Landscape">
+	<variable name="sumAbsenceByName" class="java.lang.Integer" resetType="Group" resetGroup="Student name" calculation="Sum"> 
+		<variableExpression>
+			<![CDATA[$F{absence}]]>
+		</variableExpression> 
+		<initialValueExpression>
+			<![CDATA[0]]>
+		</initialValueExpression> 
+	</variable>
+	<title>
+		<band height="79">
+		</band>
+	</title>
+</report>

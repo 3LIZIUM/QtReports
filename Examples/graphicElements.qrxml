@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="report" pageWidth="595" pageHeight="842" orientation="Landscape">
+	<title>
+		<band height="79">
+			<ellipse>
+				<reportElement x="0" y="150" width="200" height="40" />
+				<graphicElement stretchType="RelativeToBandHeight" pen ="Thin" fill = "Solid" />
+			</ellipse>
+		</band>
+	</title>
+</report>
