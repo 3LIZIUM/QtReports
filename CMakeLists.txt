@@ -1,10 +1,22 @@
+<<<<<<< HEAD
 ﻿cmake_minimum_required(VERSION 2.8.4)
 
 project(qtreport)
+=======
+cmake_minimum_required(VERSION 2.8.4)
+
+#если ругается на -std=c++11 - версия gcc != 4.8
+
+project(qtreportsviewer)
+>>>>>>> fa735576ab18f539027908ac296c761863705024
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
+<<<<<<< HEAD
+=======
+#обязательно указать CMAKE_PREFIX_PATH "C:/Qt/5/5.5/mingw492_32" к qt5
+>>>>>>> fa735576ab18f539027908ac296c761863705024
 if(!CMAKE_PREFIX_PATH)
 message(WARNING "CHECK CMAKE_PREFIX_PATH")
 endif()
@@ -34,8 +46,13 @@ else()
 endif()
 
 
+<<<<<<< HEAD
 SET(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/qtreport)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/qtreport) 
+=======
+SET(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/qtreportsviewer)
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/qtreportsviewer) 
+>>>>>>> fa735576ab18f539027908ac296c761863705024
 
 
   include_directories (
@@ -59,7 +76,12 @@ qtreportslib/tags/band.cpp
 qtreportslib/tags/band.hpp 
 qtreportslib/tags/detail.cpp 
 qtreportslib/tags/detail.hpp 
+<<<<<<< HEAD
 
+=======
+qtreportslib/tags/drawingexception.cpp 
+qtreportslib/tags/drawingexception.hpp
+>>>>>>> fa735576ab18f539027908ac296c761863705024
 qtreportslib/tags/field.cpp
 qtreportslib/tags/field.hpp
 qtreportslib/tags/querystring.cpp
@@ -84,6 +106,11 @@ qtreportslib/tags/widget.hpp)
 SET (QTRLIB
 qtreportslib/engine.cpp
 qtreportslib/engine.hpp
+<<<<<<< HEAD
+=======
+qtreportslib/objectsplant.cpp
+qtreportslib/objectsplant.hpp
+>>>>>>> fa735576ab18f539027908ac296c761863705024
 qtreportslib/painter.cpp
 qtreportslib/painter.hpp
 qtreportslib/parser.cpp
@@ -91,7 +118,28 @@ qtreportslib/parser.hpp
 qtreportslib/processeddb.cpp
 qtreportslib/processeddb.hpp
 	)
+<<<<<<< HEAD
 
 add_library ( qtreports SHARED ${TAGS} ${QTRLIB} ${CONVERTERS})
 
 target_link_libraries ( qtreports  ${QT5_LIBRARIES})
+=======
+	
+SET(EXE 
+qtreportsviewer/main.cpp 
+)
+
+add_library ( qtreports SHARED ${TAGS} ${QTRLIB} ${CONVERTERS})
+
+target_link_libraries ( qtreports  ${QT5_LIBRARIES})
+	
+SET(EXE 
+qtreportsviewer/main.cpp 
+)
+	
+add_executable (main ${EXE})
+	
+target_link_libraries ( main qtreports ${QT5_LIBRARIES})
+
+	
+>>>>>>> fa735576ab18f539027908ac296c761863705024

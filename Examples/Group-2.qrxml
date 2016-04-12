@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
 <report xmlns="http://jasperreports.sourceforge.net/jasperreports" 
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 		name="group_demo">
 
   <style name="Normal" isDefault="true"
     fontSize="12"
+=======
+<report name="group_demo">
+
+  <style name="Normal" isDefault="true"
+    fontSize="12"
+    pdfFontName="c:\tahoma.ttf"
+    pdfEncoding="Cp1251"
+>>>>>>> fa735576ab18f539027908ac296c761863705024
     />
   <queryString>
     <![CDATA[
